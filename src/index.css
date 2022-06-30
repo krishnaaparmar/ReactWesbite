@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+}
+
+.list {
+  list-style-type: none;
+  background: inherit;
+ 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.items {
+  margin-right: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+ padding: 1% 3%;
+  cursor: pointer;
+}
+.list a{
+  color: #f1f1f1!important;
+  text-decoration: none;
+}
+.list a:hover{
+  background-color:  #fbd0fb ;
+  color: #000!important;
+}
+.btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  padding: 5px;
+  color: #000;
+  font-size: 18px;
+}
+@media screen and (max-width: 500px){
+  .list {
+      flex-direction: row;
+      height: auto;
+  }
+  /* .items:nth-child(1){
+      border-top: 1px solid rgba(255, 255, 255, 0.555);
+      margin-top: 0px;
+  } */
+  .items {
+    width: 20%;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.555); */
+    text-align: center;
+    margin-right: 0px;
+    padding: 3% 0;
+    font-size: small;
+  }
+  .btn {
+      display: block;
+  }
+  .head1{
+    margin-top: 10%;
+  }
+  .img600{
+    min-height: 300px;
+    min-width: 300px;
+  }
+  
+  
+}
+
+@media screen and (max-width: 992px){
+.list{
+   background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+}
+}
+
+/* Homepage */
+
+.bgImage{
+margin-top: 5%;
+background-image: url(../src/assests/bg5.png);
+min-height: 600px;
+}
+
+.img300{
+  height: 300px!important;
+  width: 300px!important;
+}
+
+/* Service Page */
+
+.serviceImage{
+  margin-top: 3%;
+  background-image: url(../src/assests/code.gif);
+  min-height: 600px;
+  margin-left: 6%;
+  background-repeat:no-repeat;
+}
+
+.firstTag{
+  background-color: aliceblue;
+  font-weight: bold;
+}
+.servicebox{
+  text-align: left;
+  padding: 2%;
+}
+.cardClass{
+  padding:5%;
+  margin-left: 6%;
+  
+}
+
+/* About Page */
+
+.head1{
+  margin-top: 7%;
+  text-align: center;
+}
+.img600{
+  min-height: 600px;
+  min-width: 600px;
+}
+
+.head4{
+  color: midnightblue;
+
+}
+.bgImage1{
+  margin-top: 5%;
+  background-image: url(../src/assests/code4.png);
+  min-height: 600px;
+  }
+  .bg{
+    background: linear-gradient(45deg, rgba(156, 14, 156, 0.7), midnightblue);
+    color: white;
+    font-weight: bold;
+  }
+
+
