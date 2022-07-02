@@ -3,12 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import "../index.css";
 import "../animate.css";
-import {Container ,Card,Row, Col, Button} from 'react-bootstrap';  
+import {Container ,Card,Row} from 'react-bootstrap';  
 export default function services() {
     return (
-      <>
+      <>     
+
         
-        <div className="serviceImage"><br/>
+        <div className="serviceImage img img-fluid"><br/>
         <h1 className="animate__animated animate__slideInLeft">Services</h1>
         </div>
         
