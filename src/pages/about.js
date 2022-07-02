@@ -3,8 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import "../index.css";
 import "../animate.css";
-import {Container ,Card,Row, Col, Button} from 'react-bootstrap';  
-export default function about() {
+import useFetch from "../components/useFetch";
+
+export default function About() {
+  const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
+
     return (
       <>
        <h1 className="animate__animated animate__slideInUp head1">About Us</h1><br/><br/>
@@ -24,9 +27,17 @@ export default function about() {
               <img className="col-12 img-fluid" src={require("../assests/code3.gif")} alt="" />
             </div>
           </div>
+          <div className="col-lg-12 col-sm-12">
+          
+          </div>
+
           </div>
         <div className="aboutImage"><br/>
-       
+        <h2>Know more about us</h2>
+        {data &&
+        data.map((item) => {
+          return <div key={item.id}>{item.title}</div>;
+        })}
         </div>
         </div>
         </>
